@@ -1,0 +1,12 @@
+.brands{
+    display: flex;
+    background-color: black;
+    padding: 42px 100px;
+    gap: 100px;
+    justify-content: center;
+
+    img{
+        max-height: 36px;    
+        height: 100%;
+    }
+}

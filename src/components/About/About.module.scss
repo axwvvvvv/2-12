@@ -1,0 +1,43 @@
+.input {
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 65px;
+    margin-bottom: -100px;
+    z-index: 100;
+    position: relative;
+  
+    h1 {
+      color: white;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      input {
+        padding: 15px 52px;
+        background-image: url(/gmail.png);
+        background-repeat: no-repeat;
+        background-position: 20px;
+        padding-left: 60px;
+        border-radius: 15px;
+        border: none;
+      }
+  
+      button{
+          border: none;
+          padding: 12px 89px;
+          border-radius: 15px;
+          background-color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+      }
+    }
+  }

@@ -1,0 +1,59 @@
+
+.wrap__hero{
+    display: flex;
+    background-color: #F2F0F1;
+    gap: 105px;
+    
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+
+    h1{
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    p{
+        color: #00000099;
+    }
+
+    button{
+        max-width:250px;
+        padding: 15px 67px;
+        border: none;
+        background-color: black;
+        color: #F2F0F1;
+        border-radius: 50px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    img{
+        max-width: 310px;
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .box{
+        display: flex;
+        gap: 30px;
+        h3{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .brands, .products{
+            
+            padding-right: 30px;
+            border-right: 1px solid #0000001A;
+        }
+    }
+}

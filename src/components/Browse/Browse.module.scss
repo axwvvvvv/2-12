@@ -1,0 +1,54 @@
+.wrap {
+  background-color: #f0f0f0;
+  padding: 64px;
+  border-radius: 25px;
+
+  .title {
+    text-align: center;
+  }
+}
+
+.box {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    'card_1 card_2 card_2'
+    'card_3 card_3 card_4';
+
+  .card_1 {
+    grid-area: card_1;
+    background-image: url(./casual2.png);    
+
+  }
+  .card_2 {
+    grid-area: card_2;
+    background-image: url(./formal2.png);    
+    
+  }
+  .card_3 {
+    grid-area: card_3;
+    background-image: url(./party2.png);
+
+  }
+  .card_4 {
+    grid-area: card_4;
+    background-image: url(./gym2.png);
+  }
+
+
+  div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 290px;
+    border-radius: 20px;
+
+    h2{
+      padding-left: 10px;
+      text-align: left;
+    }
+  }
+}

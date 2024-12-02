@@ -1,0 +1,53 @@
+.footer{
+    background-color: #F0F0F0;
+    padding: 0 80px 100px 80px;
+}
+
+.wrap{
+    padding-top: 150px;
+    
+    .information{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 110px;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #0000001A;
+        padding-bottom: 50px;
+        margin-bottom: 25px;
+
+
+        .card_1{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            img{
+                max-width: 150px;
+                width: 100%;
+            }
+        }
+
+        h4{
+            cursor: pointer;
+            padding-bottom: 25px;
+        }
+
+        p{
+            cursor: pointer;
+            padding-bottom: 5px;
+            color: #00000099;
+        }
+    }
+
+    .payment{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            max-width: 280px;
+            width: 100%;
+        }
+    }
+}

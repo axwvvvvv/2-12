@@ -1,0 +1,43 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 30px;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.logo{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.search{
+    max-width: 500px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #F0F0F0;
+    border-radius: 62px;
+    background-image: url(/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    padding-left: 60px;
+}
+
+.box{
+    display: flex;
+    gap: 15px;
+}
