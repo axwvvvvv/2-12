@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.1.10",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-range": "^1.10.0",
     "react-router-dom": "^6.28.0",
     "react-tabs": "^6.0.2",
-    "sass": "^1.81.0",
+    "sass": "^1.82.0",
     "swiper": "^11.1.15"
   },
   "devDependencies": {

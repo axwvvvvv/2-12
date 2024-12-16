@@ -7,6 +7,7 @@ import Swiper from '../components/Swiper/Swiper'
 import Footer from '../components/Footer/Footer'
 import Category from '../components/Category/Category'
 import About from '../components/About/About'
+import TopSelling from '../components/TopSelling/TopSelling'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <Hero/>
         <Brands/>
         <Arrivels/>
+        <TopSelling/>
         <Category/>
         <Browse/>
         <Swiper/>

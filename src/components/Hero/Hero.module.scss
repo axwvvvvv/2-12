@@ -1,9 +1,31 @@
-
 .wrap__hero{
     display: flex;
     background-color: #F2F0F1;
     gap: 105px;
     
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    @media (max-width: 767px) {
+        .title {
+            h1 {
+                font-size: 36px;
+            }
+            
+            .box {
+                flex-direction: column;
+                gap: 15px;
+                
+                .brands, .products {
+                    border: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
 
 .title{
@@ -12,9 +34,36 @@
     gap: 30px;
     padding: 50px;
 
+    @media (max-width: 1023px) {
+        padding: 30px;
+        text-align: center;
+        align-items: center;
+        
+        h1 {
+            font-size: 48px;
+        }
+        
+        .box {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 20px;
+        gap: 20px;
+    }
+
     h1{
         font-weight: 700;
         font-size: 64px;
+
+        @media (max-width: 1023px) {
+            font-size: 48px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 36px;
+        }
     }
 
     p{
@@ -30,6 +79,11 @@
         border-radius: 50px;
         font-size: 16px;
         cursor: pointer;
+
+        @media (max-width: 767px) {
+            padding: 12px 40px;
+            font-size: 14px;
+        }
     }
 
     img{
@@ -41,9 +95,23 @@
     .box{
         display: flex;
         gap: 30px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+
         h3{
             font-size: 40px;
             font-weight: 700;
+
+            @media (max-width: 1023px) {
+                font-size: 32px;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 28px;
+            }
         }
         p{
             font-size: 16px;
@@ -54,6 +122,11 @@
             
             padding-right: 30px;
             border-right: 1px solid #0000001A;
+
+            @media (max-width: 767px) {
+                border-right: none;
+                padding-right: 0;
+            }
         }
     }
 }

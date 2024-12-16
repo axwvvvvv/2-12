@@ -11,11 +11,10 @@ const Category = () => {
             <div className="container">
                 <div className={s.wrapper}>
 
-                    {Products.slice(0,4).map(card => (
-                        <Link key={card.id} to={`/product/${card.id}`} className={s.link}>
-                         <Card  image={card.image} name={card.name} price={card.price}/>
+                    {Products.slice(0, 4).map(card => (
+                        <Link key={card.id} to={`/product/${card.id}`}  className={s.link}>
+                            <Card  image={card.image} name={card.name} price={card.price}/>
                         </Link>
-                       
                     ))}
                 </div>
             </div>

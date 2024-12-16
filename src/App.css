@@ -11,33 +11,3 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-
-
-.react-tabs__tab-list {
-  display: flex;
-  justify-content: space-between;
-  border: none !important;
-}
-
-
-.react-tabs__tab {
-text-align: center;
-border-bottom: 1px solid gray !important;
-width: 100%;
-
-margin: 0 auto;
-
-opacity: 0.6;
-
-
-
-
-}
-
-
-.react-tabs__tab--selected {
-  opacity: 1;
-  border: none !important;
-
-  border-bottom: 1px solid black !important;
-}

@@ -1,0 +1,217 @@
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    .text{
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        b{
+            font-size: 32px;
+    
+        }
+        p{
+            font-size: 16px;
+            color: #000000b7;
+        }
+    }
+    
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        button:nth-child(1) {
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-color: #F0F0F0;
+            border-radius: 50%;
+            background-image: url(/Filter.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        button:nth-child(2) {
+            padding: 15px 22px;
+            background-color: #F0F0F0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+
+        button:nth-child(3) {
+            padding: 13px 30px;
+            border: none;
+            border-radius: 25px;
+            color: rgb(0, 0, 0);
+            background-color: #F0F0F0;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 20px;
+    padding-bottom: 35px;
+
+    .card{
+        border: 1px solid #0000001A;
+        border-radius: 20px;
+        padding: 32px 28px;
+
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        p{
+            opacity: 0.6;
+            padding-bottom: 15px;
+        }
+
+        b{
+            opacity: 0.6;
+        }
+    }
+}
+
+.mainBtn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+
+    button{
+        padding: 15px 45px;
+        border: 1px solid #0000001A;
+        border-radius: 25px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
+
+.cards{
+    
+    .wrapper__products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        align-items: center;
+        border-bottom: 1px solid #0000001A;
+        padding-bottom: 50px;
+    
+        @media (max-width: 767px) {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+      }
+    
+      .category {
+        padding-bottom: 100px;
+    
+        @media (max-width: 1023px) {
+          padding-bottom: 60px;
+        }
+    
+        @media (max-width: 767px) {
+          padding-bottom: 40px;
+        }
+      }
+    
+      .link {
+        color: black;
+        text-decoration: none;
+      }
+    
+}
+
+.also{
+    h1{
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .filter {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+
+    .text {
+        b {
+            @media (max-width: 1023px) {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .buttons {
+        @media (max-width: 767px) {
+            width: 100%;
+            
+            button:nth-child(2),
+            button:nth-child(3) {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.wrap {
+    @media (max-width: 1023px) {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        @media (max-width: 767px) {
+            padding: 20px;
+        }
+    }
+}
+
+.mainBtn {
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+
+        button {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+}
+
+.cards {
+    @media (max-width: 1023px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+
+
+}

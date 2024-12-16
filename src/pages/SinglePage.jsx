@@ -4,17 +4,16 @@ import Products from '/public/products.json'
 import ProductWrap from '../components/ProductWrap/ProductWrap'
 import TabsWrap from '../components/TabsWrap/TabsWrap'
 
-
-
 const SinglePage = () => {
-const {id} = useParams()
 
-const product = Products.find(item => item.id === Number(id))
+  const {id} = useParams()
+
+  const product = Products.find(item => item.id === Number(id))
 
   return (
     <>
-    <ProductWrap product={product}/>
-    <TabsWrap/>
+      <ProductWrap product={product}/>
+      <TabsWrap/>
     </>
   )
 }

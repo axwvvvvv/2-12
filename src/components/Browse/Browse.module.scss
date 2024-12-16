@@ -3,6 +3,14 @@
   padding: 64px;
   border-radius: 25px;
 
+  @media (max-width: 1023px) {
+    padding: 40px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 25px;
+  }
+
   .title {
     text-align: center;
   }
@@ -17,6 +25,25 @@
   grid-template-areas:
     'card_1 card_2 card_2'
     'card_3 card_3 card_4';
+
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'card_1 card_2'
+      'card_3 card_4';
+    gap: 15px;
+    padding-top: 40px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'card_1'
+      'card_2'
+      'card_3'
+      'card_4';
+    padding-top: 25px;
+  }
 
   .card_1 {
     grid-area: card_1;
@@ -46,9 +73,21 @@
     min-height: 290px;
     border-radius: 20px;
 
+    @media (max-width: 1023px) {
+      min-height: 250px;
+    }
+
+    @media (max-width: 767px) {
+      min-height: 200px;
+    }
+
     h2{
       padding-left: 10px;
       text-align: left;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
     }
   }
 }
